@@ -84,7 +84,7 @@ update();
 // Listener
 canvas.addEventListener('click', e => {
   let r = Math.floor(Math.random() * maxRadius) + minRadius;
-  balls.push(new Circle(e.clientX, e.clientY, r, randomColor()));
+  balls.push(new Circle(e.clientX, e.clientY - offsetHeader, r, randomColor()));
 
   if (balls.length > maxBalls) {
     balls.shift();
