@@ -1,6 +1,9 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
+// offset header
+const offsetHeader = 60;
+
 const balls = [];
 
 const minRadius = 10;
@@ -35,7 +38,7 @@ class Circle {
     if (this.x + this.r > canvas.width || this.x - this.r < 0) {
       this.dx = -this.dx;
     }
-    if (this.y + this.r > canvas.height || this.y - this.r < 0) {
+    if (this.y + this.r > canvas.height - offsetHeader || this.y - this.r < 0) {
       this.dy = -this.dy;
     }
 
