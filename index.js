@@ -1,4 +1,4 @@
-const canvas = document.getElementById('canvas');
+const canvas = document.getElementById('main__canvas');
 const ctx = canvas.getContext('2d');
 
 // offset header
