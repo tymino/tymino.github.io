@@ -22,14 +22,14 @@ body {
   font-size: 1.5rem;
 }
 
-.main__container {
+.container {
   position: absolute;
   top: 40vh;
   text-align:center;
   width:100%;
 }
 
-.main__container--anim-huerotate {
+.container--anim-huerotate {
   background: -webkit-gradient(linear, left top, right top, from(cyan), to(orange));
   background: -o-linear-gradient(left, cyan, orange);
   background: linear-gradient(to right, cyan, orange);
@@ -41,10 +41,10 @@ body {
   -webkit-animation: huerotate 30s linear infinite;
 }
 
-.main__title {
+.container__title {
   font-size: 2.2rem;
 }
-.main__undertext {
+.container__undertext {
   font-size: 1.2rem;
 }
 
